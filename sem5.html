@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semester 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">Semester 5</h1>
+</header>
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="semester.html">All Semesters</a>
+</nav>
+
+<section class="semester-title">
+    <h2>Subjects</h2>
+    <p>Click on View Notes</p>
+</section>
+
+<!-- SUBJECT CARDS -->
+<section class="subject-section">
+
+    <div class="subject-card">
+        <h3>Optimization Techniques</h3>
+        <button onclick="showNotes('ot')">View Notes</button>
+    </div>
+
+    <div class="subject-card">
+        <h3>Fundamentals of Artificial Intelligence</h3>
+        <button onclick="showNotes('ai')">View Notes</button>
+    </div>
+
+    <div class="subject-card">
+        <h3>Machine Learning Essentials</h3>
+        <button onclick="showNotes('ml')">View Notes</button>
+    </div>
+
+    <div class="subject-card">
+        <h3>Internet & Web Programming</h3>
+        <button onclick="showNotes('iwp')">View Notes</button>
+    </div>
+
+    <div class="subject-card">
+        <h3>Python Programming</h3>
+        <button onclick="showNotes('python')">View Notes</button>
+    </div>
+
+</section>
+
+<!-- NOTES BLOCK (HIDDEN INITIALLY) -->
+<section id="notesBox" class="notes-box">
+    <h2 id="notesTitle"></h2>
+    <ul id="notesList"></ul>
+</section>
+
+<footer class="footer">
+    <p>© 2026 Notes By Ishika</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

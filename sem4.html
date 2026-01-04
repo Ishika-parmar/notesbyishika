@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Semester 4</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header><h1 class="logo">Semester 4</h1></header>
+
+<nav class="navbar">
+<a href="index.html">Home</a>
+<a href="semester.html">All Semesters</a>
+</nav>
+
+<section class="semester-title">
+<h2>Subjects</h2>
+<p>Click on View Notes</p>
+</section>
+
+<section class="subject-section">
+
+<div class="subject-card">
+<h3>Operating System</h3>
+<button onclick="showNotes('os')">View Notes</button>
+</div>
+
+<div class="subject-card">
+<h3>Object Oriented Programming</h3>
+<button onclick="showNotes('oop')">View Notes</button>
+</div>
+
+<div class="subject-card">
+<h3>Data Communication & Networks</h3>
+<button onclick="showNotes('cn')">View Notes</button>
+</div>
+
+<div class="subject-card">
+<h3>Engineering Economics</h3>
+<button onclick="showNotes('ee')">View Notes</button>
+</div>
+
+<div class="subject-card">
+<h3>Discrete Mathematics & Graph Theory</h3>
+<button onclick="showNotes('dmgt')">View Notes</button>
+</div>
+
+</section>
+
+<section id="notesBox" class="notes-box">
+<h2 id="notesTitle"></h2>
+<ul id="notesList"></ul>
+</section>
+
+<footer class="footer">© 2026 Notes By Ishika</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

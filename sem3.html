@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Semester 3</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header><h1 class="logo">Semester 3</h1></header>
+
+<nav class="navbar">
+<a href="index.html">Home</a>
+<a href="semester.html">All Semesters</a>
+</nav>
+
+<section class="semester-title">
+<h2>Subjects</h2>
+<p>Click on View Notes</p>
+</section>
+
+<section class="subject-section">
+
+<div class="subject-card">
+<h3>Indian Constitution</h3>
+<button onclick="showNotes('constitution')">View Notes</button>
+</div>
+
+<div class="subject-card">
+<h3>Digital Fundamentals</h3>
+<button onclick="showNotes('digital')">View Notes</button>
+</div>
+
+<div class="subject-card">
+<h3>Data Structures</h3>
+<button onclick="showNotes('ds')">View Notes</button>
+</div>
+
+<div class="subject-card">
+<h3>DBMS</h3>
+<button onclick="showNotes('dbms')">View Notes</button>
+</div>
+
+<div class="subject-card">
+<h3>Probability & Statistics</h3>
+<button onclick="showNotes('stats')">View Notes</button>
+</div>
+
+</section>
+
+<section id="notesBox" class="notes-box">
+<h2 id="notesTitle"></h2>
+<ul id="notesList"></ul>
+</section>
+
+<footer class="footer">© 2026 Notes By Ishika</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
