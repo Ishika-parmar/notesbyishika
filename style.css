@@ -1,3 +1,4 @@
+/* ===== Global ===== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,8 +14,6 @@ header {
     padding: 20px 0;
     background-color: #117c8f;
     text-align: center;
-    position: relative; /* make sure it stays above content */
-    z-index: 10;        /* stays on top of hero */
 }
 
 .logo {
@@ -23,13 +22,12 @@ header {
     font-weight: bold;
 }
 
+
 /* ===== Navigation ===== */
 .navbar {
     background-color: #333;
     text-align: center;
     padding: 15px 0;
-    position: relative;
-    z-index: 10; /* stays on top */
 }
 
 .navbar a {
@@ -44,18 +42,44 @@ header {
     color: #ff6600;
 }
 
-/* ===== Hero Section ===== */
+.back-links {
+    margin: 15px 20px;
+}
+
+.back-links a {
+    text-decoration: none;
+    color: #444;
+    position: relative;
+    font-size: 14px;
+}
+
+.back-links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #444;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+.back-links a:hover::after {
+    width: 100%;
+}
+
+
+/* ===== Hero Section (index.html) ===== */
 .hero {
     position: relative;
     text-align: center;
-    margin-top: 0; /* remove overlap with header */
 }
 
 .hero-img {
     width: 100%;
     height: 70vh;
     object-fit: cover;
-    filter: brightness(70%); /* dark overlay */
+    filter: brightness(70%);
 }
 
 .hero-text {
@@ -65,7 +89,6 @@ header {
     transform: translate(-50%, -50%);
     color: white;
     max-width: 700px;
-    z-index: 1;
     text-align: center;
 }
 
@@ -94,9 +117,7 @@ header {
     background: linear-gradient(90deg, #e65c00, #ff7f50);
 }
 
-
-
-/* ===== Features Section ===== */
+/* ===== Features Section (index.html) ===== */
 .features {
     display: flex;
     justify-content: center;
@@ -132,7 +153,7 @@ header {
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* ===== Semester Page ===== */
+/* ===== Semester Page (semester.html) ===== */
 .semester-section {
     text-align: center;
     padding: 40px;
@@ -155,232 +176,81 @@ header {
     background-color: #ff6600;
 }
 
-/* ===== Semester Page ===== */
-.semester-title {
+
+/* ===== Semester 5 Subjects ===== */
+.subject-list {
     text-align: center;
-    padding: 30px 10px 10px;
+    margin-top: 20px;
 }
 
-.semester-title h2 {
-    font-size: 28px;
-    margin-bottom: 5px;
-}
-
-.semester-title p {
-    color: #555;
-    font-size: 14px;
-}
-
-/* ===== Subject Cards ===== */
-.subject-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 30px;
-}
-
-.subject-card {
-    width: 250px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    text-align: center;
-    background-color: #f5f5f5;
-}
-
-.subject-card h3 {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.subject-card a {
-    display: inline-block;
-    padding: 8px 15px;
-    background-color: rgb(17, 124, 143);
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-.subject-card a:hover {
-    background-color: #0e5e66;
-}
-
-.subject-card {
-    background: white;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 6px;
-}
-
-.subject-card button {
-    margin-top: 10px;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.unit-block {
-    width: 80%;
-    margin: 30px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 6px;
-}
-
-.unit-block ul li {
-    list-style: none;
-    margin: 6px 0;
-}
-
-/* ===== Subject List (If Needed Later) ===== */
-.subjects {
-    padding: 40px;
-    text-align: center;
-}
-
-.subjects ul {
-    list-style: none;
-    padding: 0;
-}
-
-.subjects li {
-    padding: 8px 0;
-}
-
-.subjects ul {
-    list-style: none;
-    padding: 0;
-}
-
-.subjects li {
-    padding: 10px 0;
-}
-
-.subjects a {
-    text-decoration: none;
-    color: #117c8f;
-    font-weight: 500;
-}
-
-.subjects a:hover {
-    text-decoration: underline;
-}
-
-.subjects h3 {
-    cursor: pointer;
-    background: #f2f2f2;
-    padding: 10px;
-    margin-top: 15px;
-}
-
-.subjects ul {
-    list-style: none;
-    padding-left: 20px;
-}
-
-.subjects li {
-    padding: 6px 0;
-}
-
-.semester-title {
-    text-align: center;
-    padding: 20px;
-}
-
-.subject-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.subject-card {
-    width: 260px;
-    border: 1px solid #ccc;
-    padding: 15px;
-    text-align: center;
-}
-
-.subject-card button {
-    padding: 8px 15px;
-    background: #117c8f;
+.subject-btn {
+    margin: 5px;
+    padding: 12px 20px;
+    background-color: #333;
     color: white;
     border: none;
+    border-radius: 6px;
     cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
-.subject-card button:hover {
-    background: #0e5f6b;
+.subject-btn:hover {
+    background-color: #ff6600;
 }
 
-/* NOTES SECTION */
-.notes-box {
-    display: none;
-    padding: 30px;
+.subject-btn.active {
+    background-color: #ff6600;
+}
+
+
+/* ===== PDF Assignments List ===== */
+.pdf-list {
+    display: none; /* hide initially */
+    margin-top: 20px;
     max-width: 600px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.notes-box ul {
-    list-style: none;
-    padding: 0;
-}
-
-.notes-box li {
-    padding: 8px 0;
-}
-
-.notes-box a {
-    margin-left: 10px;
-    text-decoration: none;
-    color: #117c8f;
-}
-/* Subject title */
-.notes-box h2 {
+.pdf-list h4 {
     font-size: 20px;
     margin-bottom: 15px;
-    color: #333;
+    color: #117c8f;
 }
 
-/* Units list */
-.notes-box ul {
+.pdf-list ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
-.notes-box li {
-    padding: 8px 0;
+.pdf-list li {
+    padding: 6px 0;
     border-bottom: 1px solid #ddd;
-    font-size: 15px;
 }
 
-/* Last line no border */
-.notes-box li:last-child {
+.pdf-list li:last-child {
     border-bottom: none;
 }
 
-/* PDF links */
-.notes-box a {
+.pdf-list a {
     text-decoration: none;
     color: #117c8f;
     font-weight: 500;
+    transition: 0.2s;
 }
 
-.notes-box a:hover {
+.pdf-list a:hover {
     text-decoration: underline;
-}
-.notes-box {
-    display: none;
-    padding: 30px;
-    max-width: 600px;
-    margin: 40px auto;   /* centers the block */
-    text-align: center; /* centers heading */
+    color: #ff6600;
 }
 
-/* ===== Footer ===== */
+/* ===== Footer (index + semester) ===== */
 .footer {
     background: #333;
     color: white;
@@ -411,6 +281,3 @@ header {
     font-size: 12px;
     opacity: 0.7;
 }
-
-
-
