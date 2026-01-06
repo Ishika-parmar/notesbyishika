@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "semester3": [
     {
@@ -37,4 +38,45 @@
       ]
     }
   ]
+=======
+{
+  "semester3": [
+    {
+      "subject": "Indian Constitution",
+      "units": [
+        {"name": "Unit 1", "link": "pdfs/sem3/constitution/unit1.pdf"},
+        {"name": "Unit 2", "link": "pdfs/sem3/constitution/unit2.pdf"},
+        {"name": "Unit 3", "link": "pdfs/sem3/constitution/unit3.pdf"},
+        {"name": "Unit 4", "link": "pdfs/sem3/constitution/unit4.pdf"},
+        {"name": "Unit 5", "link": "pdfs/sem3/constitution/unit5.pdf"},
+        {"name": "Unit 6", "link": "pdfs/sem3/constitution/unit6.pdf"},
+        {"name": "Unit 7", "link": "pdfs/sem3/constitution/unit7.pdf"}
+      ]
+    },
+    {
+      "subject": "Digital Fundamentals",
+      "units": [
+        {"name": "Unit 1", "link": "pdfs/sem3/digital/unit1.pdf"},
+        {"name": "Unit 2", "link": "pdfs/sem3/digital/unit2.pdf"}
+        {"name": "Unit 3", "link": "pdfs/sem3/digital/unit1.pdf"},
+        {"name": "Unit 4", "link": "pdfs/sem3/digital/unit2.pdf"}
+        {"name": "Unit 5", "link": "pdfs/sem3/digital/unit1.pdf"},
+        {"name": "Unit 6", "link": "pdfs/sem3/digital/unit2.pdf"}
+      ]
+    }
+  ],
+  "semester5": [
+    {
+      "subject": "Python Programming",
+      "units": [
+        {"name": "Unit 1", "link": "pdfs/sem5/python/unit1.pdf"},
+        {"name": "Unit 2", "link": "pdfs/sem5/python/unit2.pdf"}
+        {"name": "Unit 3", "link": "pdfs/sem5/python/unit1.pdf"},
+        {"name": "Unit 4", "link": "pdfs/sem5/python/unit2.pdf"}
+        {"name": "Unit 5", "link": "pdfs/sem5/python/unit1.pdf"},
+        {"name": "Unit 6", "link": "pdfs/sem5/python/unit2.pdf"}
+      ]
+    }
+  ]
+>>>>>>> 16222117a36810f35c3e8e2c94dc5c38df6561ca
 }

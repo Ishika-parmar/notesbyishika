@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ===== Global ===== */
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -114,4 +115,122 @@ footer {
     background-color: #333;
     color: white;
     margin-top: 30px;
+=======
+/* ===== Global ===== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #117c8f;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* ===== Navigation ===== */
+.navbar {
+    background-color: #333;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: #ff6600;
+}
+
+/* ===== Practicals Section ===== */
+.practicals-section {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.practicals-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #117c8f;
+}
+
+/* ===== Practical Subject List ===== */
+.practical-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.practical-btn {
+    padding: 10px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: left;
+    background-color: white;
+    transition: 0.2s;
+}
+
+.practical-btn:hover {
+    background-color: #e0f7fa;
+}
+
+/* ===== PDF List ===== */
+.pdf-list {
+    display: none;
+    background: #fff;
+    padding: 12px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+.pdf-list h4 {
+    margin-bottom: 10px;
+    color: #117c8f;
+}
+
+.pdf-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.pdf-list li {
+    margin-bottom: 6px;
+}
+
+.pdf-list li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.pdf-list li a:hover {
+    text-decoration: underline;
+    color: #117c8f;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+>>>>>>> 16222117a36810f35c3e8e2c94dc5c38df6561ca
 }
