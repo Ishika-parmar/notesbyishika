@@ -11,10 +11,12 @@ from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
 // 🔴 PUT YOUR FIREBASE CONFIG HERE
 const firebaseConfig = {
-  apiKey:"PASTE",
-  authDomain:"PASTE",
-  projectId:"PASTE",
-  appId:"PASTE"
+   apiKey: "AIzaSyAxZBYQd9X2s_bdttAgn4Bn8tFfNSi4PPY",
+  authDomain: "notes-by-ishika.firebaseapp.com",
+  projectId: "notes-by-ishika",
+  storageBucket: "notes-by-ishika.firebasestorage.app",
+  messagingSenderId: "769311075872",
+  appId: "1:769311075872:web:0e312fefd9d610f056d645"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -53,3 +55,4 @@ window.location="index.html";
 function show(text){
 document.getElementById("msg").innerText=text;
 }
+
