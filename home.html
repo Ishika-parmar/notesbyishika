@@ -1,0 +1,87 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes By Ishika | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">Notes By Ishika</h1>
+</header>
+
+<script type="module">
+
+import { auth } from "./firebase.js";
+import { onAuthStateChanged } from
+"https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+onAuthStateChanged(auth,(user)=>{
+if(!user){
+window.location.href="login.html";
+}
+});
+
+</script>
+
+<nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="semester.html">Semester</a>
+    <a href="practical.html">Practicals</a>
+
+    <button onclick="logout()" style="margin-left:20px;">Logout</button>
+</nav>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="img11.jpeg" alt="Study Image" class="hero-img">
+        <div class="hero-text">
+            <h1>Don’t Just Read.<br>Understand.</h1>
+            <p>Find semester-wise notes, assignments, and study material easily and quickly.</p>
+            <a href="semester.html" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-card">
+            <h3>Semester-wise Notes</h3>
+            <p>Access notes for all subjects organized by semester.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Practicals</h3>
+            <p>Download Practical Files and assignments easily.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Quick Access</h3>
+            <p>Find any subject’s notes in just a few clicks.</p>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <img src="myphoto.jpeg" alt="Ishika" class="footer-img">
+    <h3>Ishika Parmar</h3>
+    <p>Notes & Study Material</p>
+    <p class="footer-copy">© 2026 Notes By Ishika</p>
+</footer>
+
+<script type="module">
+
+import { auth } from "./firebase.js";
+import { onAuthStateChanged } from
+"https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+onAuthStateChanged(auth,(user)=>{
+   if(!user){
+      window.location.href="login.html";
+   }
+});
+
+</script>
+
+</body>
+

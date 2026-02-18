@@ -13,7 +13,7 @@
 </header>
 
 <nav class="navbar">
-    <a href="index.html">Home</a>
+    <a href="home.html">Home</a>
     <a href="semester.html">Semester</a>
     <a href="#">Practicals</a>
 </nav>
@@ -100,4 +100,18 @@
 
 
 <script src="script.js"></script>
+
+<script type="module">
+
+import { auth } from "./firebase.js";
+import { onAuthStateChanged } from
+"https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+onAuthStateChanged(auth,(user)=>{
+   if(!user){
+      window.location.href="login.html";
+   }
+});
+
+</script>
 </body>
